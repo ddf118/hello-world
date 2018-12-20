@@ -17,10 +17,13 @@ config 配置有system级别 global（用户级别） 和local（当前仓库）
 git config --system --list——查看系统config
 git config --global  --list——查看当前用户（global）配置
 git config --local  --list—— 查看当前仓库配置信息
+git config --list ——查看全配置
 ####额外配置
 git config --global color.ui true ——开启颜色支持
 git config --global core.quotepath false ——支持utf-8编码
-
+###修改配置
+git config --global --replace-all user.email "输入你的邮箱" 
+git config --global --replace-all user.name "输入你的用户名"
 ###创建版本库（repository）
 mkdir directory——创建一个空目录
 cd directory
